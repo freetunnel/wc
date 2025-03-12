@@ -42,7 +42,7 @@ Jika belum terinstall:
   ### 2. Tahap Install
 
 ```
-git clone https://github.com/freetunnel/wildcard.git
+git clone https://github.com/freetunnel/wc.git
 cd wildcard
 chmod +x *
 ./menu
