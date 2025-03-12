@@ -501,4 +501,21 @@ while true; do
     echo -e "${YELLOW}2. Hapus Domain${NC}"
     echo -e "${YELLOW}3. Membuat Worker${NC}"
     echo -e "${YELLOW}4. Hapus Worker${NC}"
-    echo -e "${YELLOW}5. Menambahkan atau Menghapus DNS Record${NC}"domain_
+echo -e "${YELLOW}5. Menambahkan atau Menghapus DNS Record${NC}"
+echo -e "${RED}0. Keluar${NC}"
+echo -e "${CYAN}=====================================================${NC}"
+read -p "Masukkan nomor opsi (1/2/3/4/5/0): " menu_option
+
+case $menu_option in
+    1) tambah_domain ;;
+    2) hapus_domain ;;
+    3) buat_worker ;;
+    4) hapus_worker ;;
+    5) tambah_dns_record ;;
+    0) exit 0 ;;
+    *) 
+        echo -e "${RED}Pilihan tidak valid. Silakan pilih opsi yang benar.${NC}"
+        read -p "Tekan Enter untuk melanjutkan..."
+        ;;
+esac
+done
